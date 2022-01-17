@@ -1,0 +1,43 @@
+﻿@model WE_Test.Data.Model.emp_data
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h4 style="text-align:center">تسجيل بيانات موظف جديد</h4>
+<hr />
+<div class="row"  dir="rtl" align="right">
+    <div class="col-md-12">
+        <form asp-action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label" dir="rtl">الاسم</label>
+                <input asp-for="Emp_name" class="form-control" />
+                <span asp-validation-for="Emp_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" dir="rtl">الوظيفه</label>
+                <input asp-for="Emp_job" class="form-control" />
+                <span asp-validation-for="Emp_job" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" dir="rtl">الحاله</label>
+                <div class="form-group">
+                    <select class="form-control" asp-for="Type" asp-items="@ViewBag.TypesDDL" id="Types">
+                        <option>اختر حاله</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="حفظ" class="btn btn-primary" />
+                <a href="/Employee/Add"  class="btn btn-primary"><span>تسجيل جديد</span></a>
+                <a href="/Employee/Add"  class="btn btn-primary"><span> عدم الحفظ</span></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

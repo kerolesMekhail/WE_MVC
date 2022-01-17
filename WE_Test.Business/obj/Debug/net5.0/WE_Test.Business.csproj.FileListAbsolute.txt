@@ -1,0 +1,17 @@
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\WE_Test.Business.deps.json
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\WE_Test.Business.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\ref\WE_Test.Business.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\WE_Test.Business.pdb
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.AssemblyInfo.cs
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\ref\WE_Test.Business.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.pdb
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\WE_Test.Data.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\WE_Test.Repository.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\WE_Test.Data.pdb
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\bin\Debug\net5.0\WE_Test.Repository.pdb
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Business\obj\Debug\net5.0\WE_Test.Business.csproj.CopyComplete

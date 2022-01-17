@@ -1,0 +1,107 @@
+﻿<link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+
+@model IEnumerable<WE_Test.Data.Model.emp_data>
+
+<div class="row">
+    <div class="col-sm-6 col-lg-3">
+        <button type="button" class="btn btn-lg btn-primary" onclick="return TypeEmp(1)"><div style="width:250px">موظفين جدد </div><div>@ViewBag.newEmployees</div></button>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <button type="button" class="btn btn-lg btn-primary" onclick="return TypeEmp(2)"><div style="width:250px">موظفين تحت الاختبار</div><div>@ViewBag.probationaryStaff</div></button>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <button type="button" class="btn btn-lg btn-primary" onclick="return TypeEmp(3)"><div style="width:250px">موظفين قائمين</div><div>@ViewBag.existingEmployees</div></button>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <button type="button" class="btn btn-lg btn-primary" onclick="return TypeEmp(4)"><div style="width:250px">موظفين محاليين للمعاش</div><div>@ViewBag.localEmployeesForPension</div></button>
+    </div>
+</div>
+<div class="container">
+
+    <h3 class="text-primary"  dir="rtl" align="right">الموظفين</h3>
+    <hr />
+    <table id="Employees" class="table table-striped table-bordered dt-responsive nowrap" dir="rtl" align="right">
+
+        <thead>
+            <tr>
+                <th>م</th>
+                <th>رقم الموظف</th>
+                <th>الاسم</th>
+                <th>الوظيفة</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts
+{
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+    <script>
+        var TypeEmp = function (e) {
+            debugger;
+            $('#Employees').dataTable({
+                "processing": true,
+                 "destroy": true,
+                "serverSide": true,
+                "filter": true,
+                "ajax": {
+                    "url": "/Employee/GetEmployees?type=" + e,
+                    "type": "POST",
+                    "datatype": "json"
+                },
+                "columnDefs": [{
+                    "targets": [0],
+                    "visible": false,
+                    "searchable": false
+                }],
+                "columns": [
+                    { "data": "emp_id", "name": "emp_id", "autowidth": true },
+                    { "data": "emp_id", "name": "emp_id", "autowidth": true },
+                    { "data": "emp_name", "name": "emp_name", "autowidth": true },
+                    { "data": "emp_job", "name": "emp_job", "autowidth": true },
+                    {
+                        "render": function (data, type, row) { return '<a href="#" class="btn btn-primary" onclick=Edit("' + row.emp_id + '"); > تعديل </a>' },
+                        "orderable": false
+                    },
+                    {
+                        "render": function (data, type, row) { return '<a href="#" class="btn btn-danger" onclick=Delete("' + row.emp_id + '"); > الغاء </a>' },
+                        "orderable": false
+                    },
+                ]
+            });
+        };
+
+        var Delete = function (emp_id) {
+            var id = parseInt(emp_id);
+            const __ajx = {
+                url: '/Employee/Delete?Id=' + id,
+                method: 'GET',
+            };
+
+            $.ajax(__ajx).done(function (data, s, xhr) {
+                window.location.href = '/Employee/Index';
+            }).fail(function (response, s, xhr) {
+                toastr.error(response);
+            });
+
+        };
+        var Edit = function (emp_id) {
+        var id = parseInt(emp_id);
+        const __ajx = {
+            url: '/Employee/Edit?Id=' + id,
+            method: 'GET',
+        };
+
+           $.ajax(__ajx).done(function (data, s, xhr) {
+               window.location.href = '/Employee/Edit?Id=' + id;
+        }).fail(function (response, s, xhr) {
+            toastr.error(response);
+        });
+
+    };
+    </script>
+
+}

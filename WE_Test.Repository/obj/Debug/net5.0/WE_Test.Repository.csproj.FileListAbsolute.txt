@@ -1,0 +1,15 @@
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.AssemblyInfo.cs
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\bin\Debug\net5.0\WE_Test.Repository.deps.json
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\bin\Debug\net5.0\WE_Test.Repository.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\bin\Debug\net5.0\ref\WE_Test.Repository.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\bin\Debug\net5.0\WE_Test.Repository.pdb
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\bin\Debug\net5.0\WE_Test.Data.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\bin\Debug\net5.0\WE_Test.Data.pdb
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.csproj.CopyComplete
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\ref\WE_Test.Repository.dll
+C:\Users\DELL\source\repos\WE_Test\WE_Test.Repository\obj\Debug\net5.0\WE_Test.Repository.pdb
